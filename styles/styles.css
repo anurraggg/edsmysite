@@ -301,6 +301,12 @@ main .section.highlight {
   padding-bottom: 30px;
 }
 
-.sa{
-  padding-left: 40px;
+img[alt="shakarpara"] {
+  border-radius: 10px;
+  border: 65px;
+}
+
+img[alt="onion samosa"] {
+  border-radius: 10px;
+  padding-left: 65px;
 }
