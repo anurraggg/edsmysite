@@ -230,6 +230,8 @@ main img {
 /* sections */
 main > .section {
   margin: 40px 0;
+  align-items: center;
+  padding-left: 80px;
 }
 
 main > .section > div {
@@ -256,7 +258,3 @@ main .section.highlight {
   padding: 40px 0;
 }
 
-div.section.columns.container{
-  align-items: center;
-  gap: 2.5rem 2rem;
-}
