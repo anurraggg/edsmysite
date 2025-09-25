@@ -5,6 +5,9 @@
 
 .columns img {
   width: 100%;
+  margin: auto;
+  max-height: 11.625rem;
+  max-width: 13.5rem;
 }
 
 .columns > div > div {
