@@ -301,12 +301,22 @@ main .section.highlight {
   padding-bottom: 30px;
 }
 
+img[alt="pizza carousel"]{
+  border-radius: 80px;
+}
+
 img[alt="shakarpara"] {
   border-radius: 10px;
-  border: 65px;
+  padding-right: 65px;
 }
 
 img[alt="onion samosa"] {
+  border-radius: 10px;
+  padding-left: 65px;
+  padding-right: 65px;
+}
+
+img[alt="dal puri"]{
   border-radius: 10px;
   padding-left: 65px;
 }
