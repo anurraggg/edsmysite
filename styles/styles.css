@@ -230,8 +230,6 @@ main img {
 /* sections */
 main > .section {
   margin: 40px 0;
-  align-items: center;
-  padding-left: 80px;
 }
 
 main > .section > div {
@@ -258,6 +256,9 @@ main .section.highlight {
   padding: 40px 0;
 }
 
-h2 #aashirvaad-offerings {
-  text-align: center;
+
+.section.columns-container{
+  padding: 4rem 7.0625rem;
+  margin: 0 auto;
+  max-width: 85.375rem;
 }
