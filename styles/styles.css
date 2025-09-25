@@ -256,6 +256,7 @@ main .section.highlight {
   padding: 40px 0;
 }
 
+/*made changes after this */
 
 .section.columns-container{
   padding: 4rem 7.0625rem;
@@ -268,5 +269,25 @@ main .section.highlight {
 }
 
 #select-your-preferred-option-from-our-wide-range-of-product-categories{
+  text-align: center;
+}
+
+#atta{
+  text-align: center;
+}
+
+#organic{
+  text-align: center;
+}
+
+#salt{
+  text-align: center;
+}
+
+#vermicelli{
+  text-align: center;
+}
+
+#rava{
   text-align: center;
 }

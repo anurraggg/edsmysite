@@ -8,6 +8,8 @@
   margin: auto;
   max-height: 11.625rem;
   max-width: 13.5rem;
+  padding-left: 90px;
+  padding-top: 50px;
 }
 
 .columns > div > div {
@@ -34,3 +36,4 @@
     order: unset;
   }
 }
+
