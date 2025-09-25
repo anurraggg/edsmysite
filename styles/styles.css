@@ -326,12 +326,42 @@ img[alt="dal puri"]{
   padding-left: 100px;
 }
 
+#shakarpara-1{
+  display: inline-block;
+  padding-left: 100px;
+}
+
+#shakarpara-2{
+  display: inline-block;
+  padding-left: 100px;
+}
+
 #onion-samosa{
   display: inline-block;
   padding-left: 330px;
 }
 
+#onion-samosa-1{
+  display: inline-block;
+  padding-left: 330px;
+}
+
+#onion-samosa-2{
+  display: inline-block;
+  padding-left: 330px;
+}
+
 #dal-puri{
+  display: inline-block;
+  padding-left: 350px;
+}
+
+#dal-puri-1{
+  display: inline-block;
+  padding-left: 350px;
+}
+
+#dal-puri-2{
   display: inline-block;
   padding-left: 350px;
 }
