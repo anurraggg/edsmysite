@@ -1,20 +1,23 @@
 export default function decorate(block) {
-    const cells = Array.from(block.querySelectorAll('tr:nth-child(2) td'));
-  
-    if (!cells.length) return;
-  
+    // Split into columns
     const leftCol = document.createElement('div');
     leftCol.classList.add('left-col');
   
     const rightCol = document.createElement('div');
     rightCol.classList.add('right-col');
   
-    // LEFT: video
+    // Grab the first row's cells
+    const cells = Array.from(block.children[0].children);
+  
+    // Left column → video
     if (cells[0]) {
-      const urlText = cells[0].textContent.trim();
-      if (urlText.includes('youtube.com')) {
-        const videoId = new URL(urlText).searchParams.get('v');
+      const link = cells[0].querySelector('a') || cells[0].querySelector('p');
+  
+      if (link && link.textContent.includes('youtube.com')) {
+        const url = new URL(link.textContent.trim());
+        const videoId = url.searchParams.get('v');
         const iframe = document.createElement('iframe');
+  
         iframe.width = '560';
         iframe.height = '315';
         iframe.src = `https://www.youtube.com/embed/${videoId}`;
@@ -28,12 +31,12 @@ export default function decorate(block) {
       }
     }
   
-    // RIGHT: text
+    // Right column → text
     if (cells[1]) {
       const highlight = document.createElement('div');
       highlight.classList.add('highlight-box');
-      highlight.innerHTML = cells[1].innerHTML;
-      rightCol.appendChild(highlight);
+      highlight.append(...cells[1].children);
+      rightCol.append(highlight);
     }
   
     block.innerHTML = '';
