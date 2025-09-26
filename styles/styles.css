@@ -365,3 +365,11 @@ img[alt="dal puri"]{
   display: inline-block;
   padding-left: 350px;
 }
+
+.section.video-container.cards-container{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding: 20px 0;
+  align-items: flex-start;
+}
