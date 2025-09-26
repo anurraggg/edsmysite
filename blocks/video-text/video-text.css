@@ -1,22 +1,15 @@
 .video-text.block {
     display: flex;
     gap: 20px;
-    margin: 24px auto;
     max-width: 1200px;
+    margin: 24px auto;
     align-items: flex-start;
-    flex-wrap: wrap; /* ensures stacking on smaller screens */
+    flex-wrap: wrap;
   }
   
   .video-text.block .left-col {
     flex: 1;
     min-width: 300px;
-  }
-  
-  .video-text.block .left-col iframe {
-    width: 100%;
-    height: 315px;
-    border-radius: 8px;
-    border: none;
   }
   
   .video-text.block .right-col {
@@ -28,16 +21,8 @@
     background-color: #ffeab6;
     padding: 20px;
     border-radius: 12px;
-    text-align: left;
   }
   
-  .video-text.block .highlight-box h2 {
-    margin-top: 0;
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  /* Responsive behavior */
   @media (max-width: 768px) {
     .video-text.block {
       flex-direction: column;

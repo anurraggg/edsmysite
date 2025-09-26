@@ -1,22 +1,41 @@
 export default function decorate(block) {
-    // Create wrapper columns
+    // Split into columns
     const leftCol = document.createElement('div');
     leftCol.classList.add('left-col');
   
     const rightCol = document.createElement('div');
     rightCol.classList.add('right-col');
   
-    // Assume authors use a 2-column table in Docs
-    const rows = Array.from(block.children[0].children); // first row's cells
+    // Grab the first row's cells
+    const cells = Array.from(block.children[0].children);
   
-    if (rows[0]) {
-      leftCol.append(...rows[0].children);
+    // Left column → video
+    if (cells[0]) {
+      const link = cells[0].querySelector('a') || cells[0].querySelector('p');
+  
+      if (link && link.textContent.includes('youtube.com')) {
+        const url = new URL(link.textContent.trim());
+        const videoId = url.searchParams.get('v');
+        const iframe = document.createElement('iframe');
+  
+        iframe.width = '560';
+        iframe.height = '315';
+        iframe.src = `https://www.youtube.com/embed/${videoId}`;
+        iframe.title = 'YouTube video player';
+        iframe.frameBorder = '0';
+        iframe.allow =
+          'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+        iframe.allowFullscreen = true;
+  
+        leftCol.appendChild(iframe);
+      }
     }
   
-    if (rows[1]) {
+    // Right column → text
+    if (cells[1]) {
       const highlight = document.createElement('div');
       highlight.classList.add('highlight-box');
-      highlight.append(...rows[1].children);
+      highlight.append(...cells[1].children);
       rightCol.append(highlight);
     }
   
