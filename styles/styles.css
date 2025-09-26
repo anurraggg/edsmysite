@@ -379,7 +379,7 @@ img[alt="dal puri"]{
 .video.block{
   width: 800px;
   height: 450px;
-  margin: 0 auto;
+  margin-left: 200px;
 }
 
 .video-wrapper{
