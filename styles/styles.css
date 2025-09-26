@@ -373,3 +373,9 @@ img[alt="dal puri"]{
   padding: 20px 0;
   align-items: flex-start;
 }
+
+.video.block{
+  width: 800px;
+  height: 450px;
+  margin: 0 auto;
+}
