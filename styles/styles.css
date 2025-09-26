@@ -379,7 +379,7 @@ img[alt="dal puri"]{
 .video.block{
   width: 800px;
   height: 450px;
-  margin-left: 300px;
+  margin-left: 200px;
 }
 
 .video-wrapper{
@@ -400,4 +400,9 @@ img[alt="dal puri"]{
 
 #in-an-attempt-to-work-towards-betterment-of-the-environment-and-bring-you-optimum-taste-and-nutrition-aashirvaad-introduced-its-organic-range-truly-authentic-organic-atta-and-dals--straight-from-the-farm-to-your-table{
   padding: 20px;
+}
+
+.cards.block{
+  padding-right: 30px;
+  margin-right: 40px;
 }
