@@ -372,10 +372,32 @@ img[alt="dal puri"]{
   justify-content: center;
   padding: 20px 0;
   align-items: flex-start;
+  flex-direction: row;
+
 }
 
 .video.block{
   width: 800px;
   height: 450px;
   margin: 0 auto;
+}
+
+.video-wrapper{
+  flex-grow: 1;
+  flex-basis: 50%;
+}
+
+.cards-wrapper{
+  flex-grow: 1;
+  flex-basis: 50%;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+
+#organic-a-sustainable-way-of-life{
+  padding: 20px;
+}
+
+#in-an-attempt-to-work-towards-betterment-of-the-environment-and-bring-you-optimum-taste-and-nutrition-aashirvaad-introduced-its-organic-range-truly-authentic-organic-atta-and-dals--straight-from-the-farm-to-your-table{
+  padding: 20px;
 }
