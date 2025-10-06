@@ -419,14 +419,15 @@ img[alt="dal puri"]{
   background-color: red;
 }
 
+
+img[alt="aashirvaad_footer"]{
+  padding-left: 40px;
+  padding-top: 15px;
+}
+
 img[alt="fssai_logo"]{
   width: 280px;
   height: 80px;
   padding-top: 10px;
   padding-left: 20px;
-}
-
-img[alt="aashirvaad_footer"]{
-  padding-left: 40px;
-  padding-top: 15px;
 }
