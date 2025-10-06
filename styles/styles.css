@@ -414,3 +414,7 @@ img[alt="dal puri"]{
 #join-us-on-our-journey-towards-better-taste-and-nutrition{
   text-align: center;
 }
+
+.footer.block{
+  background-color: red;
+}
