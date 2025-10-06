@@ -1,9 +1,14 @@
-footer {
-  background-color: #c90204; /* Updated to the required red color */
-  font-size: var(--body-font-size-xs);
+/*
+ * CORE FOOTER STYLES (Provided by your project's boilerplate)
+ */
+ footer {
+  background-color: #e50000; /* Primary Red from the image */
+  font-size: var(--body-font-size-xs, 0.875rem); /* Default size or your variable */
   color: white; /* Ensure text is white */
+  width: 100%; /* Ensure it spans full width */
 }
 
+/* Scopes the inner content to a max width and provides general padding */
 footer .footer > div {
   margin: auto;
   max-width: 1200px;
@@ -20,186 +25,252 @@ footer .footer p {
   }
 }
 
+/* --- AASHIRVAAD CUSTOM FOOTER LAYOUT STYLES --- */
 
-/* --- Aashirvaad Custom Footer Layout Styles --- */
-
-/* The main layout wrapper must be a Flex container */
+/* The main container wrapping the columns (Corresponds to your HTML's .footer-top) */
 .footer-layout-wrapper {
-    display: flex;
-    justify-content: space-between; 
-    align-items: flex-start;
-    gap: 30px; /* Space between columns */
-    padding: 0 5%; /* Internal padding matching the original design idea */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px; /* Space between columns */
+  padding-bottom: 30px;
+  /* Use the .footer > div padding, remove the internal padding: 0 5%; */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3); /* The separator line */
 }
 
 .footer-col {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/* Define widths based on the visual layout (approx. 25/40/35) */
+/* --- COLUMN DEFINITIONS (Based on your custom class names) --- */
+
+/* Column 1: Logo, FSSAI */
 .col-info {
-    flex: 0 0 25%;
-    max-width: 250px;
+  flex: 0 0 auto;
+  min-width: 200px; /* Adjust size based on logo */
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Vertical space between logo and FSSAI block */
 }
 
+/* Column 2: Email Registration */
 .col-register {
-    flex-grow: 1; /* Allows the registration column to take up remaining space */
-    max-width: 450px; 
-    padding-right: 30px; /* Add internal spacing */
+  flex-grow: 1; /* Takes up the most middle space */
+  max-width: 450px; 
+  padding: 0 30px; /* Internal spacing on left and right */
 }
 
+/* Column 3: Navigation Links */
 .col-links {
-    flex: 0 0 35%;
-    display: flex; /* Apply Flexbox to the links column itself */
-    justify-content: space-around;
-    /* The visual separator line, applied via border-left */
-    border-left: 1px solid rgba(255, 255, 255, 0.3); 
-    padding-left: 30px; 
+  flex: 0 0 250px; /* Fixed width for better control */
+  display: flex;
+  justify-content: space-between; /* Space between the two link groups */
+  border-left: 1px solid rgba(255, 255, 255, 0.3); 
+  padding-left: 30px; 
+  gap: 20px;
 }
 
-/* --- Content Styling --- */
+/* --- CONTENT STYLING --- */
 
-/* Image/Logo Styling (Replace with actual image rendering) */
+/* Logo/Image Styling */
 .col-info img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+  max-width: 100%;
+  height: auto;
 }
+
+/* FSSAI Logo and Text Group */
 .fssai-block {
-    margin-top: 15px;
+  display: flex;
+  flex-direction: column; /* Stack logo and text */
+  align-items: flex-start;
+  gap: 5px;
 }
+
+.fssai-block img {
+  max-width: 60px; /* Size the FSSAI logo */
+  margin: 0;
+}
+
 .lic-number {
-    font-size: 0.85rem;
-    margin-top: 5px;
+  font-size: 0.8rem;
+  opacity: 0.8;
 }
 
 /* Registration Form Styling */
 .register-title {
-    font-size: 1.2em;
-    font-weight: 600; 
-    margin-top: 0;
-    margin-bottom: 10px;
+  font-size: 1.2em;
+  font-weight: bold; /* Changed to bold to match image */
+  margin-top: 0;
+  margin-bottom: 15px;
+  display: flex; /* For inline logo/icon if applicable */
+  align-items: center;
+  gap: 8px;
+}
+
+/* Style for the 'in Your Inbox' icon, if rendered here */
+.register-title img {
+    max-height: 25px; 
+    margin-right: 5px;
 }
 
 .registration-form input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid white;
-    background-color: transparent;
-    color: white;
-    margin-bottom: 10px;
-    border-radius: 4px;
-    box-sizing: border-box;
+  width: 100%;
+  padding: 12px 15px; /* Adjusted padding */
+  border: 2px solid white; /* Slightly thicker border for visibility */
+  background-color: transparent;
+  color: white;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem;
 }
 
 .registration-form input[type="email"]::placeholder {
-    color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .consent-checkbox-group {
-    display: flex;
-    align-items: flex-start;
-    font-size: 0.85rem;
-    margin-bottom: 20px;
-    line-height: 1.3;
+  display: flex;
+  align-items: flex-start;
+  font-size: 0.85rem;
+  margin-bottom: 20px;
+  line-height: 1.4;
 }
 
 .consent-checkbox-group input[type="checkbox"] {
-    margin-top: 2px;
-    margin-right: 8px;
-    accent-color: white; 
+  min-width: 16px;
+  min-height: 16px;
+  margin-top: 2px;
+  margin-right: 8px;
+  accent-color: white; 
 }
 
 .privacy-link {
-    color: white;
-    text-decoration: underline;
+  color: white;
+  text-decoration: underline;
 }
 
 .register-button {
-    background-color: #f77c8e; /* The pinkish-red button color */
-    color: white;
-    border: none;
-    padding: 10px 25px;
-    font-size: 1em;
-    cursor: pointer;
-    text-transform: uppercase;
-    border-radius: 25px;
-    font-weight: 600;
-    transition: background-color 0.2s;
+  background-color: #f77c8e; /* The pinkish-red button color */
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  font-size: 1em;
+  cursor: pointer;
+  text-transform: capitalize; /* Changed to capitalize for a softer look, matching the image */
+  border-radius: 25px;
+  font-weight: 600;
+  transition: background-color 0.2s;
 }
+
 .register-button:hover {
-     background-color: #ff99a9;
+  background-color: #ff99a9;
 }
 
 /* Navigation Links Styling */
 .nav-group {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  white-space: nowrap; /* Prevents long link names from wrapping */
 }
 
 .nav-group a {
-    color: white;
-    text-decoration: none;
-    line-height: 2.5; 
-    display: block;
-    font-size: 0.95rem;
-    transition: color 0.2s;
+  color: white;
+  text-decoration: none;
+  line-height: 2.2; /* Tighter line height for the vertical stack */
+  display: block;
+  font-size: 1rem;
+  transition: color 0.2s;
 }
+
 .nav-group a:hover {
-    color: #f77c8e;
+  color: #f77c8e;
+  text-decoration: underline;
 }
 
-/* The right-most link group to align its links visually to the right */
-.nav-group-right li {
-    text-align: right;
+/* --- COPYRIGHT/BOTTOM SECTION STYLES (Outside .footer-layout-wrapper) --- */
+/* The FSSAI license number is already in .fssai-block, so we just need a line for the bottom area */
+.footer-bottom {
+    /* If your AEM template renders the copyright outside the main footer block, 
+       you'd add styles here. For now, we rely on the main footer padding and the .footer-layout-wrapper border. */
 }
 
-/* --- Media Query for Mobile Responsiveness --- */
-@media (max-width: 768px) {
-    .footer-layout-wrapper {
-        flex-direction: column; 
-        align-items: center;
-        text-align: center;
-    }
-
-    .footer-col {
-        width: 100%;
-        margin-bottom: 30px;
-        padding-left: 0;
-        padding-right: 0;
-    }
+/* --- MEDIA QUERY FOR MOBILE RESPONSIVENESS (Adjusted Breakpoint) --- */
+@media (max-width: 900px) {
+  
+  .footer-layout-wrapper {
+    flex-direction: column; 
+    align-items: center;
+    border-left: none; /* Remove border from links */
+    border-bottom: none; /* The separator will go lower */
+    padding-bottom: 0;
+  }
+  
+  .col-info, .col-register, .col-links {
+    max-width: 90%;
+    width: 100%;
+    margin-bottom: 30px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+  
+  .col-info {
+    /* Aligns the logo and fssai block in the center */
+    align-items: center;
+  }
+  
+  .fssai-block {
+    align-items: center;
+  }
+  
+  .col-register {
+    /* Center the registration form elements */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .registration-form input[type="email"] {
+    max-width: 350px;
+  }
+  
+  .consent-checkbox-group {
+    /* Allows the checkbox text to wrap logically */
+    max-width: 350px; 
+    margin: 0 auto 20px auto; /* Center the text block */
+    text-align: left;
+  }
+  
+  .col-links {
+    flex-direction: column; /* Stack the two link groups */
+    align-items: center;
+    text-align: center;
+    border-left: none; 
+    padding-left: 0;
+    width: 100%;
     
-    .col-info, .col-register, .col-links {
-        max-width: 100%;
-    }
+    /* Add a visual separator between the links and the FSSAI info */
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.3); 
+  }
 
-    .col-info {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .fssai-block {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .col-links {
-        border-left: none; 
-        justify-content: space-around;
-        padding-left: 0;
-    }
-    
-    /* Reset link alignment on mobile */
-    .nav-group-right li {
-        text-align: left;
-    }
-    
-    .consent-checkbox-group {
-        text-align: left;
-        align-self: flex-start;
-        margin: 0 auto 20px auto;
-        max-width: 90%; 
-    }
+  .nav-group {
+    /* Links should align center on mobile */
+    margin-bottom: 20px;
+  }
+  
+  .nav-group-right li, .nav-group li {
+    text-align: center;
+  }
+  
+  /* Put the FSSAI block at the very bottom, after the links, and center it */
+  .fssai-info-container { /* You'll need to wrap the FSSAI block in its own container outside the .footer-layout-wrapper in your HTML */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+  }
 }
