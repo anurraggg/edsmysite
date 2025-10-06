@@ -1,49 +1,20 @@
-/* Update your wrapper class to target the table */
-.block table {
-  /* This replaces your .footer-layout-wrapper */
-  display: flex; /* Treat the table as the layout container */
-  justify-content: space-between; 
-  align-items: flex-start;
-  gap: 30px; 
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  padding-bottom: 30px;
-  width: 100%;
+footer {
+  background-color: var(--light-color);
+  font-size: var(--body-font-size-xs);
 }
 
-/* Update your column classes to target the table cells */
-.block table > tbody > tr > td {
-  /* This replaces your .footer-col */
-  padding: 0; /* Remove default table padding */
-  box-sizing: border-box;
+footer .footer > div {
+  margin: auto;
+  max-width: 1200px;
+  padding: 40px 24px 24px;
 }
 
-/* Define widths based on the column order in your Google Doc */
-.block table > tbody > tr > td:nth-child(1) {
-  /* Column 1: Logo/FSSAI */
-  flex: 0 0 25%;
-  max-width: 250px;
-}
-
-.block table > tbody > tr > td:nth-child(2) {
-  /* Column 2: Registration */
-  flex-grow: 1;
-  padding: 0 30px;
-}
-
-.block table > tbody > tr > td:nth-child(3) {
-  /* Column 3: Links */
-  flex: 0 0 250px;
-  border-left: 1px solid rgba(255, 255, 255, 0.3); 
-  padding-left: 30px; 
-}
-
-/* All other styling from your original footer.css should be maintained, 
- but ensure all selectors target the content INSIDE the <td> tags. */
-
-/* Example: Styling the links list */
-.block ul {
-  list-style: none;
-  padding: 0;
+footer .footer p {
   margin: 0;
-  /* ... rest of your list styles ... */
+}
+
+@media (width >= 900px) {
+  footer .footer > div {
+    padding: 40px 32px 24px;
+  }
 }
