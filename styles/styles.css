@@ -423,6 +423,11 @@ img[alt="dal puri"]{
 img[alt="aashirvaad_footer"]{
   padding-left: 40px;
   padding-top: 15px;
+  display: inline-block;
+}
+
+img[alt="asv_small"]{
+  display: inline-block;
 }
 
 img[alt="fssai_logo"]{
