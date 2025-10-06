@@ -1,6 +1,7 @@
 footer {
-  background-color: var(--light-color);
+  background-color: #c90204; /* Updated to the required red color */
   font-size: var(--body-font-size-xs);
+  color: white; /* Ensure text is white */
 }
 
 footer .footer > div {
@@ -17,4 +18,188 @@ footer .footer p {
   footer .footer > div {
     padding: 40px 32px 24px;
   }
+}
+
+
+/* --- Aashirvaad Custom Footer Layout Styles --- */
+
+/* The main layout wrapper must be a Flex container */
+.footer-layout-wrapper {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    gap: 30px; /* Space between columns */
+    padding: 0 5%; /* Internal padding matching the original design idea */
+}
+
+.footer-col {
+    box-sizing: border-box;
+}
+
+/* Define widths based on the visual layout (approx. 25/40/35) */
+.col-info {
+    flex: 0 0 25%;
+    max-width: 250px;
+}
+
+.col-register {
+    flex-grow: 1; /* Allows the registration column to take up remaining space */
+    max-width: 450px; 
+    padding-right: 30px; /* Add internal spacing */
+}
+
+.col-links {
+    flex: 0 0 35%;
+    display: flex; /* Apply Flexbox to the links column itself */
+    justify-content: space-around;
+    /* The visual separator line, applied via border-left */
+    border-left: 1px solid rgba(255, 255, 255, 0.3); 
+    padding-left: 30px; 
+}
+
+/* --- Content Styling --- */
+
+/* Image/Logo Styling (Replace with actual image rendering) */
+.col-info img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+.fssai-block {
+    margin-top: 15px;
+}
+.lic-number {
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
+
+/* Registration Form Styling */
+.register-title {
+    font-size: 1.2em;
+    font-weight: 600; 
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.registration-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.registration-form input[type="email"]::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.consent-checkbox-group {
+    display: flex;
+    align-items: flex-start;
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.consent-checkbox-group input[type="checkbox"] {
+    margin-top: 2px;
+    margin-right: 8px;
+    accent-color: white; 
+}
+
+.privacy-link {
+    color: white;
+    text-decoration: underline;
+}
+
+.register-button {
+    background-color: #f77c8e; /* The pinkish-red button color */
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1em;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: background-color 0.2s;
+}
+.register-button:hover {
+     background-color: #ff99a9;
+}
+
+/* Navigation Links Styling */
+.nav-group {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-group a {
+    color: white;
+    text-decoration: none;
+    line-height: 2.5; 
+    display: block;
+    font-size: 0.95rem;
+    transition: color 0.2s;
+}
+.nav-group a:hover {
+    color: #f77c8e;
+}
+
+/* The right-most link group to align its links visually to the right */
+.nav-group-right li {
+    text-align: right;
+}
+
+/* --- Media Query for Mobile Responsiveness --- */
+@media (max-width: 768px) {
+    .footer-layout-wrapper {
+        flex-direction: column; 
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-col {
+        width: 100%;
+        margin-bottom: 30px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .col-info, .col-register, .col-links {
+        max-width: 100%;
+    }
+
+    .col-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .fssai-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-links {
+        border-left: none; 
+        justify-content: space-around;
+        padding-left: 0;
+    }
+    
+    /* Reset link alignment on mobile */
+    .nav-group-right li {
+        text-align: left;
+    }
+    
+    .consent-checkbox-group {
+        text-align: left;
+        align-self: flex-start;
+        margin: 0 auto 20px auto;
+        max-width: 90%; 
+    }
 }
