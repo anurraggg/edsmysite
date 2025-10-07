@@ -76,3 +76,8 @@
   padding-left: 30px;
   height: 160px;
 }
+
+img[alt="aashirvad_sec"]{
+  height: 55px;
+  width: 160px;
+}
