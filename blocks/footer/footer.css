@@ -20,6 +20,6 @@ footer .footer p {
 }
 
 .footer.block[data-block-name="footer"] > div {
-  height: 220px;
-  width: 900px;
+  height: 350px;
+  width: 800px;
 }
