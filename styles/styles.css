@@ -266,39 +266,48 @@ main .section.highlight {
 
 #aashirvaad-offerings{
   text-align: center;
+  color: #131313;
 }
 
 #select-your-preferred-option-from-our-wide-range-of-product-categories{
   text-align: center;
+  color: #131313;
 }
 
 #atta{
   text-align: center;
+  color: #131313;
 }
 
 #organic{
   text-align: center;
+  color: #131313;
 }
 
 #salt{
   text-align: center;
+  color: #131313;
 }
 
 #vermicelli{
   text-align: center;
+  color: #131313;
 }
 
 #rava{
   text-align: center;
+  color: #131313;
 }
 
 #cook-delicious-recipes-with-us{
   text-align: center;
+  color: #131313;
 }
 
 #explore-your-favourite-recipe-curated-by-experts-using-aashirvaad-products{
   text-align: center;
   padding-bottom: 30px;
+  color: #131313;
 }
 
 img[alt="pizza carousel"]{
@@ -401,6 +410,7 @@ img[alt="dal puri"]{
 
 #in-an-attempt-to-work-towards-betterment-of-the-environment-and-bring-you-optimum-taste-and-nutrition-aashirvaad-introduced-its-organic-range-truly-authentic-organic-atta-and-dals--straight-from-the-farm-to-your-table{
   padding: 20px;
+  color: #131313;
 }
 
 .cards .block{
@@ -408,13 +418,6 @@ img[alt="dal puri"]{
   margin-right: 40px;
 }
 
-#our-community{
-  text-align: center;
-}
-
-#join-us-on-our-journey-towards-better-taste-and-nutrition{
-  text-align: center;
-}
 
 .footer.block{
   background-color: red;
