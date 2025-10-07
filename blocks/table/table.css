@@ -65,3 +65,14 @@
 .table.bordered table td {
   border: 1px solid #dadada;
 }
+
+.footer.block[data-block-name="footer"] 
+  .table.bordered.block[data-block-name="table"] 
+  thead th {
+  border-top-width: 0px;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-left-width: 0.1px;
+  padding-left: 30px;
+  height: 160px;
+}
