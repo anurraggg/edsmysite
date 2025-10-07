@@ -73,8 +73,8 @@
 body {
   display: none;
   margin: 0;
-  background-color: whitesmoke;
-  color: var(--text-color);
+  background-color: yellow;
+  color: whitesmoke;
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
   line-height: 1.6;
