@@ -73,7 +73,7 @@
 body {
   display: none;
   margin: 0;
-  background-color: yellow;
+  background-color: #fff6e3;
   color: whitesmoke;
   font-family: var(--body-font-family);
   font-size: var(--body-font-size-m);
