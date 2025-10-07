@@ -18,3 +18,8 @@ footer .footer p {
     padding: 40px 32px 24px;
   }
 }
+
+.footer.block[data-block-name="footer"] > div {
+  height: 220px;
+  width: 900px;
+}
