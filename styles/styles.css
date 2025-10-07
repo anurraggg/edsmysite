@@ -419,19 +419,9 @@ img[alt="dal puri"]{
   background-color: red;
 }
 
-img[alt="aashirvaad_footer"]{
-  padding-left: 40px;
-  padding-top: 15px;
-  display: inline-block;
-}
-
-img[alt="asv_small"]{
-  display: inline-block;
-}
-
 img[alt="fssai_logo"]{
-  width: 280px;
+  width: 220px;
   height: 80px;
-  padding-top: 10px;
   padding-left: 20px;
+  border-width: 0px;
 }
