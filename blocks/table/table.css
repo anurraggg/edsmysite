@@ -23,8 +23,8 @@
 }
 
 .table table thead tr {
-  border-top: 2px solid #dadada;
-  border-bottom: 2px solid #dadada;
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
 }
 
 .table table tbody tr {
